@@ -114,7 +114,9 @@ class Member(GameActivity: GameActivity, name: String, nameKor: String, memberVi
     fun die() {
         isExploring = false
         isAlive = false
+        isIn = false
         this.memberView.visibility = View.GONE
+        GameActivity.memberListIsIn.remove(this)
     }
 
     // 상태 변화 메소드
@@ -127,6 +129,12 @@ class Member(GameActivity: GameActivity, name: String, nameKor: String, memberVi
     fun stateChangeTired() { isTired = true }
     fun stateChangeFatigued() { isFatigued = true }
 
+    fun stateChangeNotCrazy() { isCrazy = false; isVeryCrazy = false}
+    fun stateChangeNotHurt() { isHurt = false; isVeryHurt = false}
+    fun stateChangeNotSick() { isSick = false; isVerySick = false}
+    fun stateChangeNotTired() { isTired = false }
+    fun stateChangeNotFatiqued() { isFatigued = false }
+
     // 상태 가져오기 - Boolean
     fun getStateIsCrazy(): Boolean { return isCrazy }
     fun getStateIsVeryCrazy(): Boolean { return isVeryCrazy }
@@ -136,6 +144,9 @@ class Member(GameActivity: GameActivity, name: String, nameKor: String, memberVi
     fun getStateIsVerySick(): Boolean { return isVerySick }
     fun getStateIsTired(): Boolean { return isTired }
     fun getStateIsFatigued(): Boolean { return isFatigued }
+
+    fun eatFull() { levelHunger = 100; stateHunger = ""}
+    fun drinkFull() { levelThirst = 100; stateThirst = ""}
 
 
     // 상태 가져오기 - String

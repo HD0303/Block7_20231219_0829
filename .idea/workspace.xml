@@ -10,9 +10,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b56202e-c6cb-40ed-a11b-1e15dffd913e" name="Changes" comment="와쌘즈">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Event_independence_goraniHouseDie.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Event_independence_askWaterFromMedStudents.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Event_independence_cockroachKingdom.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Event_independence_colorfulMushrooms.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Event_independence_earthquake.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Event_independence_fire.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Event_independence_flood.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Event_independence_hiddenSpace.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Event_independence_honorForBeggars.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Event_independence_insomnia.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Event_independence_moreInformationNeeded.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Event_independence_nextRoomOdor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Event_independence_phoneManipulation.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Event_independence_poorSurvivorNormal.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Event_independence_poorSurvivorStrong.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Event_independence_povertyStrickenAttack.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Event_independence_spiderWorld.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Event_independence_squeakSqueak.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Event_independence_stonePeddlerHomeless.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Event_independence_ventilatorOdorFlashlight.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Event_independence_ventilatorOdorToolBox.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Event_independence_wallOdor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Event_independence_weWantToBathe.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/EventHandler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/EventHandler.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/GameActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/GameActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Member.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/block7/Member.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/event_scripts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/raw/event_scripts.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702986017442</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="와쌘즈">
+      <created>1702987174793</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702987174793</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

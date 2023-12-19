@@ -53,6 +53,8 @@ class GameActivity : BaseActivity() {
     val itemListNotOwned = mutableListOf<Item>() //초기에는 모든 아이템 없는걸로 취급
     val itemListBroken = mutableListOf<Item>()
 
+    lateinit var item_choose_button : ImageButton
+
     /* 무작위로 객체를 반환하는 메소드 */
     fun getRandomMemberFromListIsIn(): Member { // 무작위 멤버 : 안에 있는 멤버 중 무작위로 1명을 골라 반환함
         return memberListIsIn.random()
@@ -313,8 +315,9 @@ class GameActivity : BaseActivity() {
             // 이벤트 타입에 따른 버튼 View 설정
             if(is_ox_event) { // OX 이벤트의 경우
                 pre_event_o_button.visibility = View.VISIBLE
-                pre_event_o_button.visibility = View.VISIBLE
+                pre_event_x_button.visibility = View.VISIBLE
                 item_choose_button.visibility = View.GONE
+                finishbutton.visibility = View.GONE
             } else if(is_item_event) { // item 이벤트의 경우
                 pre_event_o_button.visibility = View.GONE
                 pre_event_x_button.visibility = View.GONE
@@ -386,7 +389,6 @@ class GameActivity : BaseActivity() {
         }
 
         // 클릭 리스너
-        finishbutton.visibility = View.GONE
         finishbutton.setOnClickListener {  //일차 종료 버튼
             survival_note_page4.visibility = View.GONE
 
@@ -419,8 +421,6 @@ class GameActivity : BaseActivity() {
 
             // 페이지 초기화
             initPage()
-
-            finishbutton.visibility = View.GONE
 
             date++
             dayText.setText("${date}일차")
@@ -525,5 +525,9 @@ class GameActivity : BaseActivity() {
         // 이전 페이지를 숨기고 새 페이지를 보여줍니다
         fromPage.visibility = View.GONE
         toPage.visibility = View.VISIBLE
+    }
+
+    fun getItemChooseButton(): ImageButton {
+        return item_choose_button
     }
 }
