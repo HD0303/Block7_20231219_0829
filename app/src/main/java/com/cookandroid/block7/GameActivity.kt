@@ -412,13 +412,11 @@ class GameActivity : BaseActivity() {
             // 5. Page4의 이벤트 스크립트 설정하기
             pre_script.text = selectedEvent.getPreScript()
 
-
             // 필요한 동작 수행
             feed()
 
             // 페이지 초기화
             initPage()
-
 
             finishbutton.visibility = View.GONE
 

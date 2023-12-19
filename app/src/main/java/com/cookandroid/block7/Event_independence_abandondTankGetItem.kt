@@ -1,7 +1,5 @@
 package com.cookandroid.block7
 
-import kotlin.random.Random
-
 
 class Event_independence_abandondTankGetItem(GameActivity: GameActivity, eventName: String,  type: Int, weight: Int, isAvailable: Boolean)
     : Event(GameActivity, eventName, type, weight, isAvailable) {

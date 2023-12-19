@@ -20,15 +20,26 @@ class EventHandler(GameActivity: GameActivity) {
         val event_invasion_grandma = Event_invasion_grandma(GameActivity, "event_invasion_grandma", typeOX, defaultWeight, defaultIsAvailable)
         val event_invasion_firefighter = Event_invasion_firefighter(GameActivity, "event_invasion_firefighter", typeOX, defaultWeight, defaultIsAvailable)
         val event_plunder_oldMan = Evnet_plunder_oldMan(GameActivity, "evnet_plunder_oldMan", typeOX, defaultWeight, defaultIsAvailable)
-        val event_independence_abandondTankGetItem = Event_independence_abandondTankGetItem(GameActivity, "evnet_plunder_oldMan", typeOX, defaultWeight, defaultIsAvailable)
-        val event_independence_abandondTankDie = Event_independence_abandondTankDie(GameActivity, "evnet_plunder_oldMan", typeOX, defaultWeight, defaultIsAvailable)
-        // 이벤트를 리스트에 추가
+        val event_independence_abandondTankGetItem = Event_independence_abandondTankGetItem(GameActivity, "event_independence_abandondTankGetItem", typeOX, defaultWeight, defaultIsAvailable)
+        val event_independence_abandondTankDie = Event_independence_abandondTankDie(GameActivity, "event_independence_abandondTankDie", typeOX, defaultWeight, defaultIsAvailable)
+        val event_independence_goraniHouseGetKimbap = Event_independence_goraniHouseGetKimbap(GameActivity, "event_independence_goraniHouseGetKimbap", typeOX, defaultWeight, defaultIsAvailable)
+        val event_independence_fightDameunEunju = Event_independence_fightDameunEunju(GameActivity, "event_independence_fightDameunEunju", typeOX, defaultWeight, defaultIsAvailable)
+        val event_independence_fightEunjuHyundong = Event_independence_fightEunjuHyundong(GameActivity, "event_independence_fightEunjuHyundong", typeOX, defaultWeight, defaultIsAvailable)
+        val event_independence_fightSounDameun = Event_independence_fightSounDameun(GameActivity, "event_independence_fightSounDameun", typeOX, defaultWeight, defaultIsAvailable)
+        val event_independence_fightSounEunju = Event_independence_fightSounEunju(GameActivity, "event_independence_fightSounEunju", typeOX, defaultWeight, defaultIsAvailable)
+
         events.add(event_invation_robbery)
         events.add(event_invasion_grandma)
         events.add(event_invasion_firefighter)
         events.add(event_plunder_oldMan)
         events.add(event_independence_abandondTankGetItem)
         events.add(event_independence_abandondTankDie)
+        events.add(event_independence_goraniHouseGetKimbap)
+        events.add(event_independence_fightDameunEunju)
+        events.add(event_independence_fightEunjuHyundong)
+        events.add(event_independence_fightSounDameun)
+        events.add(event_independence_fightSounEunju)
+
     }
 
 
