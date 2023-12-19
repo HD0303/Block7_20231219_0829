@@ -50,17 +50,16 @@
                 android:background="@null"
                 />
 
-            <TextView
+            <ImageView
                 android:id="@+id/ration_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.2"
                 app:layout_constraintStart_toStartOf="@id/guide_line"
                 app:layout_constraintTop_toBottomOf="@id/guide_line"
                 android:fontFamily="@font/nanum3"
-                android:textSize="15dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:text="배급 시간이다..."
+                android:textSize="13pt"
+
                 android:textColor="@color/black"
                 />
 
@@ -117,6 +116,21 @@
                 />
 
             <ImageButton
+                android:id="@+id/eunju_medkit_check"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.15"
+                app:layout_constraintWidth_percent="0.1"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_medkit"
+                app:layout_constraintStart_toStartOf="@id/ration_eunju"
+                app:layout_constraintEnd_toEndOf="@id/ration_eunju"
+                app:layout_constraintBottom_toTopOf="@id/ration_eunju"
+                android:background="@null"
+                android:alpha="0.5"
+                />
+
+            <ImageButton
                 android:id="@+id/ration_soun"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -155,6 +169,20 @@
                 app:layout_constraintWidth_percent="0.06"
                 app:layout_constraintEnd_toEndOf="@id/ration_soun"
                 app:layout_constraintTop_toBottomOf="@id/ration_soun"
+                android:background="@null"
+                android:alpha="0.5"
+                />
+            <ImageButton
+                android:id="@+id/soun_medkit_check"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.15"
+                app:layout_constraintWidth_percent="0.1"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_medkit"
+                app:layout_constraintStart_toStartOf="@id/ration_soun"
+                app:layout_constraintEnd_toEndOf="@id/ration_soun"
+                app:layout_constraintBottom_toTopOf="@id/ration_soun"
                 android:background="@null"
                 android:alpha="0.5"
                 />
@@ -203,6 +231,21 @@
                 />
 
             <ImageButton
+                android:id="@+id/dameun_medkit_check"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.15"
+                app:layout_constraintWidth_percent="0.1"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_medkit"
+                app:layout_constraintStart_toStartOf="@id/ration_dameun"
+                app:layout_constraintEnd_toEndOf="@id/ration_dameun"
+                app:layout_constraintBottom_toTopOf="@id/ration_dameun"
+                android:background="@null"
+                android:alpha="0.5"
+                />
+
+            <ImageButton
                 android:id="@+id/ration_hyundong"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -246,6 +289,22 @@
                 />
 
             <ImageButton
+                android:id="@+id/hyundong_medkit_check"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.15"
+                app:layout_constraintWidth_percent="0.1"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_medkit"
+                app:layout_constraintStart_toStartOf="@id/ration_hyundong"
+                app:layout_constraintEnd_toEndOf="@id/ration_hyundong"
+                app:layout_constraintBottom_toTopOf="@id/ration_hyundong"
+                android:background="@null"
+                android:alpha="0.5"
+                />
+
+
+            <ImageButton
                 android:id="@+id/next_button_page2to3"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -286,6 +345,67 @@
                 app:layout_constraintTop_toTopOf="parent"
                 android:background="@null"
                 />
+
+            <ImageView
+                android:id="@+id/text_guideline"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.15"
+                app:layout_constraintWidth_percent="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="20dp"
+                />
+
+            <ImageView
+                android:id="@+id/water_icon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintWidth_percent="0.06"
+                app:layout_constraintHeight_percent="0.13"
+                android:src="@drawable/water_icon"
+                app:layout_constraintBottom_toBottomOf="@id/current_water"
+                app:layout_constraintTop_toTopOf="@id/current_water"
+                app:layout_constraintEnd_toStartOf="@id/current_water"
+
+                />
+
+            <TextView
+                android:id="@+id/current_water"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/text_guideline"
+                app:layout_constraintEnd_toStartOf="@id/text_guideline"
+                android:text="남은 물 2.75병"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nanum3"
+                />
+
+            <ImageView
+                android:id="@+id/kimbap_icon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintWidth_percent="0.06"
+                app:layout_constraintHeight_percent="0.13"
+                android:src="@drawable/kimbap_icon"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@id/current_water"
+                app:layout_constraintTop_toTopOf="@id/current_water"
+                app:layout_constraintStart_toEndOf="@id/text_guideline"
+                />
+
+            <TextView
+                android:id="@+id/current_kimbap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/current_water"
+                app:layout_constraintStart_toEndOf="@id/kimbap_icon"
+                android:text="남은 김밥 2.75줄"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nanum3"
+                />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

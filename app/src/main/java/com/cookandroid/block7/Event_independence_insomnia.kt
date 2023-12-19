@@ -13,7 +13,12 @@ class Event_independence_insomnia (GameActivity: GameActivity, eventName: String
     }
 
     override fun setIsAvailable() {
-        isAvailable = true
+        if(GameActivity.member_dameun.isNeedMedkit()||GameActivity.member_soun.isNeedMedkit()
+            ||GameActivity.member_eunju.isNeedMedkit()||GameActivity.member_hyundong.isNeedMedkit()){
+            isAvailable = false
+        }
+        else isAvailable = true
+
     }
 
     // 이벤트 효과 메소드

@@ -145,6 +145,8 @@ class Member(GameActivity: GameActivity, name: String, nameKor: String, memberVi
     fun getStateIsTired(): Boolean { return isTired }
     fun getStateIsFatigued(): Boolean { return isFatigued }
 
+    fun isNeedMedkit(): Boolean { return isHurt||isVeryHurt||isSick||isVerySick }
+
     fun eatFull() { levelHunger = 100; stateHunger = ""}
     fun drinkFull() { levelThirst = 100; stateThirst = ""}
 

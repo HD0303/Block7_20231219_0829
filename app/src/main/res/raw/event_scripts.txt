@@ -251,7 +251,6 @@ event_independence_bellRun_post
 event_independence_bellRun_post_tmp
 우리는 문을 열지 않기로 했고 아무 일도 없이 하루가 지나갔다.
 
-#소운과 은주의 싸움
 event_independence_fightSounEunju_pre
 소운과 은주는 이런 상황에도 미치도록 심심한 나머지 둘이서 카드게임을 하고 있었다. 초반 십분 정도는 둘이서 깔깔거리며 잘 노는가 싶더니 돌연 머리채를 잡고 싸우기 시작했다. 소운의 말로는 은주가 종을 때리는 척 자신의 손을 노렸다고 한다. 슬슬 말리지 않으면 안 될 것 같다. 누구의 편을 들어줘야 할까?
 event_independence_fightSounEunju_post
@@ -259,8 +258,6 @@ event_independence_fightSounEunju_post
 event_independence_fightSounEunju_post_tmp
 은주의 말을 들어보니 그저 종을 치는 속도가 느렸을 뿐 절대로 고의로 소운의 손을 때린 것은 아니라고 한다. 우리는 은주의 편을 들어 소운에게 앞으로는 그러지 말라고 타일렀다. 소운은 격분하며 날뛰기 시작했다.
 
-
-#담은과 은주의 싸움
 event_independence_fightDameunEunju_pre
 담은과 은주는 허약한 외계인과 현동이 싸우게 될 경우 둘 중 누가 이길지에 대한 쓸모없는 논쟁을 벌이고 있었다. 담은은 허약해도 외계인이라며 외계인이 이긴다고 주장했다. 은주는 현동의 덩치라면 허약한 외계인정도는 이길수 있을 것이라 주장한다. 누구의 편을 들어줄까?
 event_independence_fightDameunEunju_post
@@ -268,8 +265,6 @@ event_independence_fightDameunEunju_post
 event_independence_fightDameunEunju_post_tmp
 은주는 흥분하며 현동에게 이것저것 들어보라며 현동의 강함을 증명하려 했다. 현동은 귀찮아 하면서도 이것저것 들며 어울려 줬다.
 
-
-#소운과 담은의 싸움
 event_independence_fightSounDameun_pre
 오늘따라 담은은 유달리 기분이 좋지 않았다. 평소 장난을 잘 치는 소운양은 하필 담은에게 장난을 걸었는데 기분이 좋지 않은 담은은 역정을 내며 소운에게 달려들었다. 소운은 미친듯 깔깔거리며 담은에게 맞섰다. 어서 말리지 않으면 큰 일이 벌어질 듯하다. 누구를 말려야 할까?
 event_independence_fightSounDameun_post
@@ -277,12 +272,11 @@ event_independence_fightSounDameun_post
 event_independence_fightSounDameun_post_tmp
 우리는 일단 소운을 담은에게서 떼어냈다. 말이 통하지 않는 소운에게 끝도 없이 타이른 결과 소운은 가까스로 이성을 되찾았다. 담은은 치를 떨며 정신 좀 차리고 살라며 소운에게 소리쳤다.
 
-#은주와 현동의 싸움
-event_independence_fighEunjuHyundong_pre
+event_independence_fightEunjuHyundong_pre
 어디선가 형광 빛으로 빛나는 외계 물고기를 데려온 은주는 이 물고기를 키워야 한다며 시위를 하기 시작했다. 현동은 무언가 꺼림직 하다며 반대했다. 은주는 종족 차별이라며 현동에게 삿대질을 하며 역정을 냈다. 이 징그러운 물고기를 과연 키워야 할까?
-event_independence_fighEunjuHyundong_post
+event_independence_fightEunjuHyundong_post
 물고기라면 식량도 많이 축내지 않을 것이며, 무엇보다 은주가 자기 식량을 나누어 물고기에게 주겠다고 했으므로 우리는 은주가 물고기를 키우는 것을 말리지 않기로 했다. 은주가 물고기에게 콘치라는 이름을 붙여준 그날 밤 콘치는 돌연 사라졌다. 은주는 현동을 의심했지만 현동은 자신은 어제 물고기의 근처에도 가지 않았다고 주장했다.
-event_independence_fighEunjuHyundong_post_tmp
+event_independence_fightEunjuHyundong_post_tmp
 은주는 내칠 바에는 함께 살아가자며 형광 빛으로 빛나는 외계 물고기를 삼켜버렸다… 목구멍으로 물고기가 넘어 갈 때 물고기의 빛이 목의 피부 너머로 슬쩍 비치는 듯했다.
 
 

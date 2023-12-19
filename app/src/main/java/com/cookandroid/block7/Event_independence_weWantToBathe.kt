@@ -10,9 +10,13 @@ class Event_independence_weWantToBathe (GameActivity: GameActivity, eventName: S
     }
 
     override fun setIsAvailable() {
-        isAvailable = true
-    }
+        if(GameActivity.member_dameun.isNeedMedkit()||GameActivity.member_soun.isNeedMedkit()
+            ||GameActivity.member_eunju.isNeedMedkit()||GameActivity.member_hyundong.isNeedMedkit()){
+            isAvailable = false
+        }
+        else isAvailable = true
 
+    }
     // 이벤트 효과 메소드
     override fun eventEffect(choose_value: Boolean) {
         if(choose_value) {

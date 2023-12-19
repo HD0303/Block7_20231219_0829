@@ -235,6 +235,70 @@ class GameActivity : BaseActivity() {
         var is_eunju_water_check = false
         var is_hyundong_water_check = false
 
+        var is_soun_medkit_check = false
+        var is_dameun_medkit_check = false
+        var is_eunju_medkit_check = false
+        var is_hyundong_medkit_check = false
+
+        val soun_medkit : ImageButton = findViewById(R.id.soun_medkit_check)
+        val dameun_medkit : ImageButton = findViewById(R.id.dameun_medkit_check)
+        val eunju_medkit : ImageButton = findViewById(R.id.eunju_medkit_check)
+        val hyundong_medkit : ImageButton = findViewById(R.id.hyundong_medkit_check)
+
+        soun_medkit.visibility = View.GONE
+        dameun_medkit.visibility = View.GONE
+        eunju_medkit.visibility = View.GONE
+        hyundong_medkit.visibility = View.GONE
+
+        if(member_dameun.isNeedMedkit()) dameun_medkit.visibility = View.VISIBLE
+        if(member_soun.isNeedMedkit()) soun_medkit.visibility = View.VISIBLE
+        if(member_eunju.isNeedMedkit()) eunju_medkit.visibility = View.VISIBLE
+        if(member_hyundong.isNeedMedkit()) hyundong_medkit.visibility = View.VISIBLE
+
+        dameun_medkit.setOnClickListener{
+            if(is_dameun_medkit_check){
+                is_dameun_medkit_check = true
+                dameun_medkit.alpha = 1.0f
+            }
+            else{
+                is_dameun_medkit_check = false
+                dameun_medkit.alpha = 0.5f
+            }
+        }
+
+        soun_medkit.setOnClickListener{
+            if(is_soun_medkit_check){
+                is_soun_medkit_check = true
+                soun_medkit.alpha = 1.0f
+            }
+            else{
+                is_soun_medkit_check = false
+                soun_medkit.alpha = 0.5f
+            }
+        }
+
+        eunju_medkit.setOnClickListener{
+            if(is_eunju_medkit_check){
+                is_eunju_medkit_check = true
+                eunju_medkit.alpha = 1.0f
+            }
+            else{
+                is_eunju_medkit_check = false
+                eunju_medkit.alpha = 0.5f
+            }
+        }
+
+        hyundong_medkit.setOnClickListener{
+            if(is_hyundong_medkit_check){
+                is_hyundong_medkit_check = true
+                hyundong_medkit.alpha = 1.0f
+            }
+            else{
+                is_hyundong_medkit_check = false
+                hyundong_medkit.alpha = 0.5f
+            }
+        }
+
         val soun_kimbap : ImageButton = findViewById(R.id.soun_kimbap_check)
         val dameun_kimbap : ImageButton = findViewById(R.id.dameun_kimbap_check)
         val eunju_kimbap : ImageButton = findViewById(R.id.eunju_kimbap_check)
@@ -401,10 +465,6 @@ class GameActivity : BaseActivity() {
             selectedEvent.executeEventEffect(choose_value)
 
             var str: String = ""
-            for(item in itemList) {
-                if(item in itemListOwned) str += item.nameKorItem + ' '
-            }
-            str += "\n\n"
 
             // 3. Page1의 이벤트 스크립트 설정하기
             post_script.text = str + selectedEvent.getPostScript() + '\n' + getAllMemberScript()
@@ -428,6 +488,12 @@ class GameActivity : BaseActivity() {
 
             memberDayPase() // 모든 멤버 dayPase
             updateAllVisibility() // 아이템, 멤버, 식량 visivility 업데이트
+
+            if(is_soun_medkit_check) {member_soun.stateChangeNotSick(); member_soun.stateChangeNotHurt()}
+            if(is_eunju_medkit_check) {member_eunju.stateChangeNotSick(); member_eunju.stateChangeNotHurt()}
+            if(is_dameun_medkit_check) {member_dameun.stateChangeNotSick(); member_dameun.stateChangeNotHurt()}
+            if(is_hyundong_medkit_check) {member_hyundong.stateChangeNotSick(); member_hyundong.stateChangeNotHurt()}
+
         }
     }
 

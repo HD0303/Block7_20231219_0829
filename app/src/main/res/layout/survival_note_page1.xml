@@ -66,6 +66,7 @@
                     android:layout_height="wrap_content"
                     android:text="여기에 긴 텍스트를 넣습니다. 이 텍스트가 충분히 길면 스크롤이 활성화됩니다."
                     android:textColor="@color/black"
+                    android:textSize="13pt"
                     />
 
             </ScrollView>
