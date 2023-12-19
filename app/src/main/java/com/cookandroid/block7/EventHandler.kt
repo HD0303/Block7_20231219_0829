@@ -23,6 +23,7 @@ class EventHandler(GameActivity: GameActivity) {
         val event_independence_abandondTankGetItem = Event_independence_abandondTankGetItem(GameActivity, "event_independence_abandondTankGetItem", typeOX, defaultWeight, defaultIsAvailable)
         val event_independence_abandondTankDie = Event_independence_abandondTankDie(GameActivity, "event_independence_abandondTankDie", typeOX, defaultWeight, defaultIsAvailable)
         val event_independence_goraniHouseGetKimbap = Event_independence_goraniHouseGetKimbap(GameActivity, "event_independence_goraniHouseGetKimbap", typeOX, defaultWeight, defaultIsAvailable)
+        val event_independence_goraniHouseDie = Event_independence_goraniHouseDie(GameActivity, "event_independence_goraniHouseDie", typeOX, defaultWeight, defaultIsAvailable)
         val event_independence_fightDameunEunju = Event_independence_fightDameunEunju(GameActivity, "event_independence_fightDameunEunju", typeOX, defaultWeight, defaultIsAvailable)
         val event_independence_fightEunjuHyundong = Event_independence_fightEunjuHyundong(GameActivity, "event_independence_fightEunjuHyundong", typeOX, defaultWeight, defaultIsAvailable)
         val event_independence_fightSounDameun = Event_independence_fightSounDameun(GameActivity, "event_independence_fightSounDameun", typeOX, defaultWeight, defaultIsAvailable)
@@ -35,14 +36,13 @@ class EventHandler(GameActivity: GameActivity) {
         events.add(event_independence_abandondTankGetItem)
         events.add(event_independence_abandondTankDie)
         events.add(event_independence_goraniHouseGetKimbap)
+        events.add(event_independence_goraniHouseDie)
         events.add(event_independence_fightDameunEunju)
         events.add(event_independence_fightEunjuHyundong)
         events.add(event_independence_fightSounDameun)
         events.add(event_independence_fightSounEunju)
 
     }
-
-
 
     // 탐험 시 발생할 수 있는 이벤트
     var events_exploring = mutableListOf<Event>()

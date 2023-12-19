@@ -46,8 +46,6 @@ class GameActivity : BaseActivity() {
 
     lateinit var memberList: List<Member>
 
-    lateinit var eventHandler: EventHandler
-
     lateinit var memberListIsIn: MutableList<Member>
 
     lateinit var itemList: List<Item>
@@ -92,11 +90,13 @@ class GameActivity : BaseActivity() {
         food_water.updateVisibility()
     }
 
+    lateinit var eventHandler: EventHandler
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.game_activity)
 
-        eventHandler = EventHandler(this)
+
 
         val musicIntent = Intent(this, MusicService::class.java)
         musicIntent.action = "CHANGE_MUSIC"
@@ -150,6 +150,8 @@ class GameActivity : BaseActivity() {
             val intent = Intent(this, OptionDialog::class.java)
             startActivity(intent)
         }
+
+        eventHandler = EventHandler(this)
 
         /* Page 관련 .. */
         var current_page = 1
